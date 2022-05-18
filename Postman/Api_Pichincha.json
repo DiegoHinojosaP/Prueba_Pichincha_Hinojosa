@@ -1,0 +1,563 @@
+{
+	"info": {
+		"_postman_id": "3ed093b0-0f4c-47f8-b35b-2b09a6013f22",
+		"name": "Api_Pichincha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Creacion de clientes",
+			"item": [
+				{
+					"name": "Creacion Jose",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n\"cliIdentificacion\": \"012312414\",\r\n  \"cliNombre\": \"José Lema\",\r\n  \"cliGenero\": \"M\",\r\n  \"cliEdad\": 31,\r\n  \"cliDireccion\": \"Otavalo sn y principal\",\r\n  \"cliTelefono\": \"098254785\",\r\n  \"cliContrasenia\": \"1234\",\r\n  \"cliEstado\": true\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Cliente",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creacion Marianela",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n\"cliIdentificacion\": \"0987654321\",\r\n  \"cliNombre\": \"Marianela Montalvo\",\r\n  \"cliGenero\": \"F\",\r\n  \"cliEdad\": 40,\r\n  \"cliDireccion\": \"Amazonas y NNUU\",\r\n  \"cliTelefono\": \"097548965\",\r\n  \"cliContrasenia\": \"5678\",\r\n  \"cliEstado\": true\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Cliente",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creacion Juan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n\"cliIdentificacion\": \"1111111111\",\r\n  \"cliNombre\": \"Juan Osorio\",\r\n  \"cliGenero\": \"M\",\r\n  \"cliEdad\": 45,\r\n  \"cliDireccion\": \"13 junio y Equinoccial\",\r\n  \"cliTelefono\": \"098874587\",\r\n  \"cliContrasenia\": \"1245\",\r\n  \"cliEstado\": true\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Cliente",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Cliente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Creacion Cuentas",
+			"item": [
+				{
+					"name": "Creacion Cuenta Jose",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cueNumero\": \"478758\",\r\n  \"cliIdCliente\": 1,\r\n  \"cueTipo\": \"Ahorro\",\r\n  \"cueEstado\": true,\r\n  \"cueSaldo\": 2000\r\n }"
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Cuenta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Cuenta"
+							]
+						},
+						"description": "Creacion de Cuenta"
+					},
+					"response": []
+				},
+				{
+					"name": "Creacion Cuenta Marianela 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cueNumero\": \"225487\",\r\n  \"cliIdCliente\": 2,\r\n  \"cueTipo\": \"Corriente\",\r\n  \"cueEstado\": true,\r\n  \"cueSaldo\": 100\r\n }"
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Cuenta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Cuenta"
+							]
+						},
+						"description": "Creacion de Cuenta"
+					},
+					"response": []
+				},
+				{
+					"name": "Creacion Cuenta Juan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cueNumero\": \"495878\",\r\n  \"cliIdCliente\": 3,\r\n  \"cueTipo\": \"Ahorro\",\r\n  \"cueEstado\": true,\r\n  \"cueSaldo\": 0\r\n }"
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Cuenta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Cuenta"
+							]
+						},
+						"description": "Creacion de Cuenta"
+					},
+					"response": []
+				},
+				{
+					"name": "Creacion Cuenta Marianela 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cueNumero\": \"495878\",\r\n  \"cliIdCliente\": 3,\r\n  \"cueTipo\": \"Ahorro\",\r\n  \"cueEstado\": true,\r\n  \"cueSaldo\": 0\r\n }"
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Cuenta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Cuenta"
+							]
+						},
+						"description": "Creacion de Cuenta"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Acreditaciones Cuentas",
+			"item": [
+				{
+					"name": "Movimientos Jose",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cueNumero\": \"478758\",\r\n  \"movTipo\": \"Credito\",\r\n  \"movSaldoInicial\": 0,\r\n  \"movMovimientoValor\": 2000\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Movimiento",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Movimiento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimientos Marianela 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cueNumero\": \"225487\",\r\n  \"movTipo\": \"Credito\",\r\n  \"movSaldoInicial\": 0,\r\n  \"movMovimientoValor\": 100\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Movimiento",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Movimiento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimientos Marianela 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cueNumero\": \"225487\",\r\n  \"movTipo\": \"Credito\",\r\n  \"movSaldoInicial\": 0,\r\n  \"movMovimientoValor\": 100\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44329/api/Movimiento",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44329",
+							"path": [
+								"api",
+								"Movimiento"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ejecicios",
+			"item": [
+				{
+					"name": "Creacion Cuentas",
+					"item": [
+						{
+							"name": "Creacion Cuenta Jose 2",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cueNumero\": \"585545\",\r\n  \"cliIdCliente\": 1,\r\n  \"cueTipo\": \"Corriente\",\r\n  \"cueEstado\": true,\r\n  \"cueSaldo\": 1000\r\n }"
+								},
+								"url": {
+									"raw": "https://localhost:44329/api/Cuenta",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44329",
+									"path": [
+										"api",
+										"Cuenta"
+									]
+								},
+								"description": "Creacion de Cuenta"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Movimientos",
+					"item": [
+						{
+							"name": "Retiro/478758",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cueNumero\": \"478758\",\r\n  \"movTipo\": \"Retiro\",\r\n  \"movMovimientoValor\": 575\r\n}"
+								},
+								"url": {
+									"raw": "https://localhost:44329/api/Movimiento",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44329",
+									"path": [
+										"api",
+										"Movimiento"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deposito/225487",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cueNumero\": \"225487\",\r\n  \"movTipo\": \"Credito\",\r\n  \"movMovimientoValor\": 600\r\n}"
+								},
+								"url": {
+									"raw": "https://localhost:44329/api/Movimiento",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44329",
+									"path": [
+										"api",
+										"Movimiento"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deposito/495878",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cueNumero\": \"495878\",\r\n  \"movTipo\": \"Credito\",\r\n  \"movMovimientoValor\": 150\r\n}"
+								},
+								"url": {
+									"raw": "https://localhost:44329/api/Movimiento",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44329",
+									"path": [
+										"api",
+										"Movimiento"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Retiro/496825",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cueNumero\": \"495878\",\r\n  \"movTipo\": \"Retiro\",\r\n  \"movMovimientoValor\": 150\r\n}"
+								},
+								"url": {
+									"raw": "https://localhost:44329/api/Movimiento",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44329",
+									"path": [
+										"api",
+										"Movimiento"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Consulta de Movimientos",
+					"item": [
+						{
+							"name": "ConsultaMovimientoFechas",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://localhost:44329/api/Movimiento/0987654321&2022-05-15&2022-05-17",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44329",
+									"path": [
+										"api",
+										"Movimiento",
+										"0987654321&2022-05-15&2022-05-17"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ConsultaCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44329/api/Cliente/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44329",
+					"path": [
+						"api",
+						"Cliente",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
