@@ -216,7 +216,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"cueNumero\": \"495878\",\r\n  \"cliIdCliente\": 3,\r\n  \"cueTipo\": \"Ahorro\",\r\n  \"cueEstado\": true,\r\n  \"cueSaldo\": 0\r\n }"
+							"raw": "{\r\n  \"cueNumero\": \"496825\",\r\n  \"cliIdCliente\": 2,\r\n  \"cueTipo\": \"Ahorros\",\r\n  \"cueEstado\": true,\r\n  \"cueSaldo\": 540\r\n }"
 						},
 						"url": {
 							"raw": "https://localhost:44329/api/Cuenta",
@@ -315,7 +315,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"cueNumero\": \"225487\",\r\n  \"movTipo\": \"Credito\",\r\n  \"movSaldoInicial\": 0,\r\n  \"movMovimientoValor\": 100\r\n}"
+							"raw": "{\r\n  \"cueNumero\": \"496825\",\r\n  \"movTipo\": \"Credito\",\r\n  \"movSaldoInicial\": 0,\r\n  \"movMovimientoValor\": 540\r\n}"
 						},
 						"url": {
 							"raw": "https://localhost:44329/api/Movimiento",
@@ -484,7 +484,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"cueNumero\": \"495878\",\r\n  \"movTipo\": \"Retiro\",\r\n  \"movMovimientoValor\": 150\r\n}"
+									"raw": "{\r\n  \"cueNumero\": \"496825\",\r\n  \"movTipo\": \"Retiro\",\r\n  \"movMovimientoValor\": 540\r\n}"
 								},
 								"url": {
 									"raw": "https://localhost:44329/api/Movimiento",
